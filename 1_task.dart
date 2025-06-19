@@ -1,35 +1,16 @@
 void main(List<String> args) {
-  //task_6_1();
-  task_6_2();
+   task_6_3();
 }
 
-void task_6_1() {
- 
-  double width = 18.4;
-  double height = 30.9;
+void task_6_3() {
 
-  double square = width * height;
-  print("Площа = $square");
+  bool hasMoney = true;
+  bool isStoreOpen  = false;
 
-  double perimetr = 2 * (width + height);
-  print("Периметр = $perimetr");
-
-  int amountBlock = square ~/ 1;
-  print("У площу вміщається = $amountBlock повних квадратів 1х1");
-}
-
-void task_6_2() {
-
-  int number = 84;
-
-  if (number > 50 && number < 100) {
-     print("number > 50 and < 100");
+  if (!hasMoney || !isStoreOpen) {
+    print("потрібно почекати");
   }
-    else if (number > 100) {
-        print("number > 100");
-    }
-    else 
-      print("number < 50");
-    
-  //print("Площа = $perimetr");
+  else if (hasMoney && isStoreOpen) {
+    print("можна зробити покупку");
+  } 
 }
