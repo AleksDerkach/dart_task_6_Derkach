@@ -10,6 +10,7 @@ void main(List<String> args) {
    task_6_7();
    task_6_8();
    task_6_9();
+   task_6_10();
 }
 
 void task_6_1() {
@@ -147,3 +148,11 @@ void task_6_9() {
   }
 }
 
+void task_6_10() {
+  
+  for (var i=1; i<21; i++){
+    if (i % 3 == 0) continue;
+    if (i > 15) break; 
+    print(i);
+  }
+}
