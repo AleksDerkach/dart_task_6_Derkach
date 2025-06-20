@@ -9,6 +9,7 @@ void main(List<String> args) {
    task_6_6();
    task_6_7();
    task_6_8();
+   task_6_9();
 }
 
 void task_6_1() {
@@ -134,3 +135,15 @@ void task_6_8() {
   }
   print("Сума чисел від 1 до 10 = $sum");
 }
+
+void task_6_9() {
+  int count = 10;
+  String pair = "";
+  while (count > 0)
+  {
+    pair = count % 2 == 0 ? "Парне число": "Непарне число";  
+    print("$count - $pair");
+    count -= 1;
+  }
+}
+
