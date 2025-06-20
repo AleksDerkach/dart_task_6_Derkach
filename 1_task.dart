@@ -3,6 +3,7 @@ void main(List<String> args) {
    task_6_2();
    task_6_3();
    task_6_4();
+   task_6_5();
 }
 
 void task_6_1() {
@@ -54,4 +55,26 @@ void task_6_4() {
   int temperature = 27;
   String weather = temperature <= 25 ? (temperature < 10 ? 'Дуже холодно' : 'Прохолодно') : 'Тепло';
   print(weather);
+}
+
+void task_6_5() {
+
+  int totalQuestions = 20;
+  int correctAnswers = 17;
+  int mistakes = 3;
+  double answer = 0;
+
+  answer += (correctAnswers * 10);
+  print("бали за правильні відповіді $answer");
+
+  answer = answer -= (5 * mistakes);
+  print("бали за виключенням помилок $answer");
+
+  answer = answer *= 2;
+  print("бали збільшено в 2 рази $answer");
+
+  if (totalQuestions > 0) {
+    answer = answer /= totalQuestions;
+  };
+  print("середній бал $answer");
 }
