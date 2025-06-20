@@ -5,6 +5,7 @@ void main(List<String> args) {
    task_6_4();
    task_6_5();
    task_6_6();
+   task_6_7();
 }
 
 void task_6_1() {
@@ -96,3 +97,19 @@ void task_6_6() {
     print("Не здано");
   }
 }
+
+void task_6_7() {
+  int dayNumber  = 3;
+
+  switch (dayNumber) {
+    case 1: print("Понеділок");
+    case 2: print("Вівторок");
+    case 3: print("Середа");
+    case 4: print("Четвер");
+    case 5: print("П'ятниця");
+    case 6: print("Субота"); print("Вихідний день 🎉");
+    case 7: print("Неділя"); print("Вихідний день 🎉");   
+    default: print("Невірний номер дня");
+  }
+}
+
