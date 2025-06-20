@@ -4,6 +4,7 @@ void main(List<String> args) {
    task_6_3();
    task_6_4();
    task_6_5();
+   task_6_6();
 }
 
 void task_6_1() {
@@ -77,4 +78,21 @@ void task_6_5() {
     answer = answer /= totalQuestions;
   };
   print("середній бал $answer");
+}
+
+void task_6_6() {
+  int examScore = 56;
+
+  if (examScore > 90) {
+    print("Відмінно");
+  }
+  else if (examScore > 74) {
+    print("Добре");
+  } 
+  else if (examScore > 59) {
+    print("Задовільно");
+  }  
+  else {
+    print("Не здано");
+  }
 }
