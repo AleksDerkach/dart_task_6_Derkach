@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main(List<String> args) {
    task_6_1();
    task_6_2();
@@ -6,6 +8,7 @@ void main(List<String> args) {
    task_6_5();
    task_6_6();
    task_6_7();
+   task_6_8();
 }
 
 void task_6_1() {
@@ -113,3 +116,21 @@ void task_6_7() {
   }
 }
 
+void task_6_8() {
+  int sum  = 0;
+
+  for (var i=1; i<11; i++){
+    //print(i);
+    stdout.write("$i ");
+  }
+  print("");
+  print("тільки парні числа");
+  for (var i=1; i<11; i++){
+    if (i % 2 == 0) stdout.write("$i "); 
+  }
+  print("");
+  for (var i=1; i<11; i++){
+    sum = sum + i; 
+  }
+  print("Сума чисел від 1 до 10 = $sum");
+}
