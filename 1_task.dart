@@ -2,6 +2,7 @@ void main(List<String> args) {
    task_6_1();
    task_6_2();
    task_6_3();
+   task_6_4();
 }
 
 void task_6_1() {
@@ -46,4 +47,11 @@ void task_6_3() {
   else if (hasMoney && isStoreOpen) {
     print("можна зробити покупку");
   } 
+}
+
+void task_6_4() {
+
+  int temperature = 27;
+  String weather = temperature <= 25 ? (temperature < 10 ? 'Дуже холодно' : 'Прохолодно') : 'Тепло';
+  print(weather);
 }
